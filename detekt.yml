@@ -1,0 +1,41 @@
+comments:
+  EndOfSentenceFormat:
+    active: true
+  UndocumentedPublicClass:
+    active: true
+    excludes: [ '**/*.kt' ]
+    includes: [ '**/connekted-core/src/main/kotlin/**/*.kt' ]
+  UndocumentedPublicFunction:
+    active: true
+    excludes: [ '**/*.kt' ]
+    includes: [ '**/connekted-core/src/main/kotlin/**/*.kt' ]
+
+complexity:
+  ComplexMethod:
+    threshold: 20
+  LongMethod:
+    threshold: 100
+  LongParameterList:
+    functionThreshold: 7
+    constructorThreshold: 10
+
+empty-blocks:
+  EmptyFunctionBlock:
+    active: false
+
+exceptions:
+  TooGenericExceptionCaught:
+    active: false
+
+formatting:
+  active: false
+
+naming:
+  TopLevelPropertyNaming:
+    constantPattern: '[A-Za-z][_A-Za-z0-9]*'
+
+style:
+  ForbiddenComment:
+    active: false
+  MagicNumber:
+    active: false
