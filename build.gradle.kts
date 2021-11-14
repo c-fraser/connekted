@@ -245,6 +245,7 @@ val cliUberJarFilename = "${cliProject.name}-${cliProject.version}.jar"
 jreleaser {
   project {
     website.set("https://github.com/c-fraser/connekted")
+    description.set("Kubernetes-native Kotlin/Java messaging applications")
     authors.set(listOf("c-fraser"))
     license.set("Apache-2.0")
     extraProperties.put("inceptionYear", "2021")
