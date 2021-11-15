@@ -1,5 +1,7 @@
 import com.diffplug.gradle.spotless.SpotlessExtension
 import io.gitlab.arturbosch.detekt.Detekt
+import java.net.URL
+import java.util.jar.Attributes
 import kotlinx.knit.KnitPluginExtension
 import org.jetbrains.dokka.Platform
 import org.jetbrains.dokka.gradle.AbstractDokkaTask
@@ -7,8 +9,6 @@ import org.jetbrains.dokka.gradle.DokkaTask
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.jreleaser.gradle.plugin.tasks.JReleaserFullReleaseTask
 import org.jreleaser.model.Active
-import java.net.URL
-import java.util.jar.Attributes
 
 if (JavaVersion.current() < JavaVersion.VERSION_11)
     throw GradleException("Java 11+ is required for this project")
